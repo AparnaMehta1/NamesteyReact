@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namesty React</title>
+</head>
+<body>
+     <!-- CREATING ELEMENT USING HTML- <h1>Hello World !!</h1> -->
+    <div id="root">Not Rendered
+       
+    </div>
+
+
+<!-- <script> 
+    // browser knows everything happening inside browser - threw API, which run inside JS engine
+    // whole window document is a web browser api 
+    // creating element using javascript - to manipulate the DOM.
+    const heading = document.createElement ("h1");
+    heading.innerHTML = "Hello World !!";
+    const root = document.getElementById("root");
+    root.appendChild(heading)
+</script> -->
+
+
+<!-- this is also knowm as shortest program of React -->
+<!-- React is a global object & react elements are also known as object-->
+<!-- React can be only a component of our normal app(we can create a element with id & grab that id inside react.createRoot(document.getElementById('root'))) -->
+<!-- core library of React with latest version - 18 -->
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<!-- ReactDOM - which give access to document model of react  -->
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<!-- <script>
+//  CREATING ELEMENT USING React
+// react.createElement takes 3 params- tag type, empty object(props) and content of the tag
+const heading = React.createElement("h1", {}, "Hello World !!");
+// console.log(heading);
+// createRoot() - it creates the root element of the react app, there can be only 1 root for a appilcation which connect react and html together
+const root = ReactDOM.createRoot(document.getElementById("root"));
+// putting heading inside root using Render
+// reander- it takes elements and modify the DOM
+root.render(heading);
+// React will override every othr element will be there inside our code-  because we are only rendering heading with root, so it will replace all the existing element 
+// inside root with different id with rendring element.
+
+</script> -->
+
+<script>
+    const element1 = React.createElement( "h1", {id:"title1"}, "heading1");
+    const element2 = React.createElement( "h1", {id:"title2"}, "heading2");
+    const container = React.createElement("div", {id:"container"},[element1,element2]);
+    const  root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(container);
+
+</script>
+</body>
+</html>

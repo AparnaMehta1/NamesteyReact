@@ -1,0 +1,57 @@
+qusn1. What is Emmet?
+Ans1. Emmet is the essential toolkit for web-developers. it also known as plugin. it developed in 2008 & alllows to type shortcuts that are then expanded into full piece of code.
+By using Emmet developers type less, they save both on time and keystrokes.
+
+
+
+qusn2. Difference between a Library and Framework?
+ans2. i) Meaning-
+a)Library - it is a collection of reuseable functions used by computer program.
+b) Framework - it is a piece of code that dictates the arcitrcture of project.
+
+ii)Inversion of control- 
+a)Library - With a library, You are in-change, means  you can choose when and where you want to insert or use the library.
+b) Framework- with a framework, the framework is in-change, means to put a specific part of your code.
+
+iii) Function- 
+a) Library- they are important in program linking & binding process.
+b) Framework- it provides standard way to build & deploy applications.
+
+iv) Flexiblity - 
+a) Library- They are more flexible with greater degree of control.
+b) Framework- they are enforced structure & standards.
+
+v) Intent- 
+a) Library - it's intent is to provide reuseable software functionality.
+b) Framework- it's intent is to reduce the complexity of the software development process.
+
+vi) Example- 
+a) Library - React.js, Jquery are  javascript library.
+b) Framework - Angular, Vue.js are javascript framework.
+
+
+
+qusn3. What is CDN? Why do we use it ?
+ans3. CDN- Content Delivery Network, it refers to a geographically distributed servers (means network of proxy servers and thier data centers). The goal is to provide fast delivery and high availability of the internet content by distributing the service spaliatally(contiguously) relative to end users.
+We use CDN to reduce latency(lag/slowness/delay). Latency is that annoying delay  you experience when trying to access a web page or video stream before it fully loads on your device. Although measured in milliseconds, it can feel like forever, and may even result in a load error or time-out.
+
+
+qusn4. Why is React known as React?
+ans4. React was developed for applications that have constantly changing data. Since React is a front-end library or the “View” in MVC(Model-View-Controller), this means that as the user clicks around and changes the app's data, the view should “react” or change with those user events.
+
+qusn5. What is crossorigin in script tag?
+ans5. The purpose of crossorigin attribute is used to share the resources from one domain to another domain. Basically, it is used to handle the CORS (Cross-Origin Resource Sharing) request. It is used to handle the CORS request that checks whether it is safe to allow for sharing the resources from one domain to other domains.
+
+qusn6. What is difference between React and ReactDOM ?
+ans6. React library is used for creating responsive views. it contains functionality utilized in web and mobiles apps.
+But ReactDOM library's functionality is only responsible for UI in the browser (web apps).
+
+qusn7. What is async and differ?
+ans7. Async and defer are attributes of script tag used to specify how browser should handle the script when loading a page.
+     By Default: While parsing the HTML code when browser encounters script tag, it pauses the parsing, fetches the script from network and executes the script 
+                 then and there. Ince the script is executed after that browser resumes HTML parsing.
+
+     Using async attribute: While HTML parsing is going on, scripts are fetched from the network asynchronously, once scripts are fetched, HTML parsing pauses 
+                            and scripts are executed then and there and once the scripts are executed, HTML parsing resumes.
+                            
+     Using defer attribute: Feches the script while HTML parsing is going on but executes the script only when HTML parsing is finished.
